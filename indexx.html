@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Community Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#home">
+                <img src="images/28f7a4e619685cec82fcdabe2071d9bf.png" alt="Logo">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#chatbot">Chatbot</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Navbar -->
+
+    <!-- <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#chatbot">Chatbot</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav> -->
+
+    <!-- Parallax Section 1 -->
+    <section class="parallax" id="home">
+        <div class="parallax-content">
+            <h1>Welcome to the Farmer's Community</h1>
+            <p>Connect, Share, and Learn with fellow farmers</p>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="content-section">
+        <h2>Community Support</h2>
+        <p>Upload an image of your crops and discuss crop-related diseases with experts and fellow farmers.</p>
+        
+        <!-- Image upload form -->
+        <form id="upload-form">
+            <label for="crop-image">Upload Crop Image:</label>
+            <input type="file" id="crop-image" name="crop-image" accept="image/*" required><br><br>
+            <label for="description">Describe the issue:</label><br>
+            <textarea id="description" name="description" rows="4" cols="50" placeholder="Describe the crop disease..." required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="response-message"></div>
+    </section>
+
+    <!-- Parallax Section 2 -->
+    <section class="parallax" id="chatbot">
+        <div class="parallax-content">
+            <h2>Chat with our AI Expert</h2>
+            <p>Ask any questions, and our chatbot will assist you.</p>
+            <!-- Placeholder for the chatbot -->
+            <div id="chatbot-container">
+                <p>Chatbot coming soon...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <h2>Connect with Experts</h2>
+        <p>Join our expert network for personalized advice. Get in touch with agriculture experts now!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Farmer's Community Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

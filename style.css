@@ -1,0 +1,176 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo Styling */
+nav .logo img {
+    height: 50px; /* Adjust this value based on the size of your logo */
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar
+nav {
+    position: fixed;
+    height: 20%;
+    /* top: 0; */
+    /* width: 100%;
+    background-color:black;
+    color: white;
+    z-index: 1000;
+} */
+
+/* nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    /* padding: 10px 0; */
+    /* padding-bottom: 50px;
+} */
+
+/* nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+} */
+
+/* nav ul li a:hover {
+    text-decoration: underline;
+}
+nav .logo img {
+    padding-top: 20px;
+    height: 100px; /* Adjust this value based on the size of your logo */
+    /* width: auto;
+/* } */ 
+/* Parallax Section */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.parallax#home {
+    background-image: url('images/wp5600045-green-wheat-fields-wallpapers.jpg');
+}
+
+.parallax#chatbot {
+    background-image: url('images/shutterstock_1484680373.jpg');
+}
+
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.parallax-content h1, .parallax-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.parallax-content p {
+    font-size: 1.5rem;
+}
+
+/* Content Section */
+.content-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#community {
+    background-color: #f4f4f4;
+}
+
+#upload-form {
+    margin-top: 20px;
+}
+
+#upload-form input, #upload-form textarea, #upload-form button {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#response-message {
+    margin-top: 20px;
+    color: green;
+}
+
+#chatbot-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .parallax-content h1, .parallax-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .parallax-content p {
+        font-size: 1.2rem;
+    }
+}
